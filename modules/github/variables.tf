@@ -26,3 +26,8 @@ variable "sl_access_token" {
 variable "sl_api_token" {
   description = "ShiftLeft API token"
 }
+
+varibles "workflow_file" {
+  default     = ".github/workflows/shiftleft-inspect.yml"
+  description = "Name of the GitHub action workflow file"
+}

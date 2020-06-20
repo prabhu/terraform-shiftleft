@@ -89,7 +89,7 @@ resource "github_branch" "sl_js_integration_branch" {
 // Create ShiftLeft Inspect workflow file in a single repo
 resource "github_repository_file" "inspect_workflow" {
   repository = data.github_repository.poc.name
-  file       = ".github/workflows/shiftleft-inspect.yml"
+  file       = var.workflow_file
   content    = file("${path.module}/data/java.tmpl")
   branch     = var.sl_branch
 
@@ -102,7 +102,7 @@ resource "github_repository_file" "inspect_js_workflow" {
   for_each = toset(data.github_repositories.js_repos.names)
 
   repository = each.key
-  file       = ".github/workflows/shiftleft-inspect.yml"
+  file       = var.workflow_file
   content    = file("${path.module}/data/js.tmpl")
   branch     = var.sl_branch
 
