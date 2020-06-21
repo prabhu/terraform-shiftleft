@@ -1,6 +1,6 @@
 # Introduction
 
-This repo contains sample terraform modules and scripts required to deploy ShiftLeft Inspect to your organization. Following providers are supported to varying degrees.
+This repo contains sample terraform modules and scripts required to deploy ShiftLeft Inspect to your organization. Following providers are supported: 
 
 | Provider     | Create Secrets | Create Pipeline definition | Commit config to repo |
 | ------------ | -------------- | -------------------------- | --------------------- |
@@ -13,7 +13,7 @@ This repo contains sample terraform modules and scripts required to deploy Shift
 
 The user should have administration access to the organization accounts with the provider such as GitHub or GitLab.
 
-## Pre-requisites
+## Prerequisites
 
 ### ShiftLeft account
 
