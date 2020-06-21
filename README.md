@@ -1,15 +1,17 @@
 # Introduction
 
-This repo contains sample terraform modules and scripts required to deploy ShiftLeft Inspect to your organization's GitHub repositories. A new GitHub action workflow for ShiftLeft will be created for integration.
+This repo contains sample terraform modules and scripts required to deploy ShiftLeft Inspect to your organization. Following providers are supported to varying degrees.
+
+| Provider     | Create Secrets | Create Pipeline definition | Commit config to repo |
+| ------------ | -------------- | -------------------------- | --------------------- |
+| GitHub       | Y              | Y                          | Y                     |
+| GitLab       | Y              | N                          | N                     |
+| Bitbucket    | Y              | N                          | N                     |
+| Azure DevOps | Y              | Y                          | N                     |
 
 ## Who should use this script?
 
-The user should have administration access to the GitHub organization. Please create a new organization with GitHub for teams plan to experiment with this script before deploying to your main account.
-
-## Known limitations
-
-- GitHub currently doesn't support deployments to personal accounts via terraform.
-- Terraform state files would include sensitive information such as GitHub and ShiftLeft tokens in plaintext by design. Care should be taken not to commit this file to git repositories or shared openly in public.
+The user should have administration access to the organization accounts with the provider such as GitHub or GitLab.
 
 ## Pre-requisites
 
@@ -21,14 +23,9 @@ Visit https://shiftleft.io/register to signup for a free trial. Then visit the `
 - Access Token
 - Public API Token ( Beta ) - Optional
 
-### GitHub Personal Access Token
+## Sample deployment (GitHub)
 
-Create a personal access token with the following scopes.
-
-- repo
-- workflow
-
-## Sample deployment
+There are a handful of sample deployments available within `deployments` directory.
 
 ```bash
 cd deployments/sample-github

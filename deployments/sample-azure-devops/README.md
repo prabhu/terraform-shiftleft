@@ -23,7 +23,12 @@ Visit https://shiftleft.io/register to signup for a free trial. Then visit the `
 
 ### Azure DevOps Personal Access Token
 
-Create a personal access token with Full Access Scope
+Create a personal access token with either Full Access Scope or with the below list.
+
+- Build - Read/Execute
+- Code - Full
+- Service Connections - Read/Query/Manage
+- Variable Groups - Read/Create/Manage
 
 ## Sample deployment
 
