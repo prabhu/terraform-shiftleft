@@ -1,6 +1,6 @@
 # Introduction
 
-This repo contains sample terraform scripts required to deploy ShiftLeft Inspect to your organization's GitLab repositories. Currently, only group variables containing the ShiftLeft tokens are created by this module.
+This repo contains sample terraform scripts required to deploy ShiftLeft NG SAST to your organization's GitLab repositories. Currently, only group variables containing the ShiftLeft tokens are created by this module.
 
 ## Who should use this script?
 

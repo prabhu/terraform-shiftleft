@@ -1,6 +1,6 @@
 # Introduction
 
-This repo contains sample terraform modules and scripts required to deploy ShiftLeft Inspect to your organization. Following providers are supported: 
+This repo contains sample terraform modules and scripts required to deploy ShiftLeft NG SAST to your organization. Following providers are supported: 
 
 | Provider     | Create Secrets | Create Pipeline definition | Commit config to repo |
 | ------------ | -------------- | -------------------------- | --------------------- |

@@ -86,7 +86,7 @@ resource "github_branch" "sl_js_integration_branch" {
 }
 // ------------------------------------------------------------
 
-// Create ShiftLeft Inspect workflow file in a single repo
+// Create ShiftLeft NG SAST workflow file in a single repo
 resource "github_repository_file" "inspect_workflow" {
   repository = data.github_repository.poc.name
   file       = var.workflow_file
@@ -97,7 +97,7 @@ resource "github_repository_file" "inspect_workflow" {
 }
 // ------------------------------------------------------------
 
-// Create ShiftLeft Inspect workflow files in all js repo
+// Create ShiftLeft NG SAST workflow files in all js repo
 resource "github_repository_file" "inspect_js_workflow" {
   for_each = toset(data.github_repositories.js_repos.names)
 

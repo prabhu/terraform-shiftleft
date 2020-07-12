@@ -1,6 +1,6 @@
 # Introduction
 
-This repo contains sample terraform scripts required to deploy ShiftLeft Inspect to your organization's Azure DevOps. A new variable group and pipelines will be created with ShiftLeft tokens for git repositories in Azure Repos.
+This repo contains sample terraform scripts required to deploy ShiftLeft NG SAST to your organization's Azure DevOps. A new variable group and pipelines will be created with ShiftLeft tokens for git repositories in Azure Repos.
 
 ## Who should use this script?
 

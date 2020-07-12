@@ -1,6 +1,6 @@
 # Introduction
 
-This repo contains sample terraform scripts required to deploy ShiftLeft Inspect to your organization's Bitbucket repositories. The official Bitbucket provider is quite basic so this example merely adds some secrets to existing repositories that are referred by ids.
+This repo contains sample terraform scripts required to deploy ShiftLeft NG SAST to your organization's Bitbucket repositories. The official Bitbucket provider is quite basic so this example merely adds some secrets to existing repositories that are referred by ids.
 
 ## Who should use this script?
 

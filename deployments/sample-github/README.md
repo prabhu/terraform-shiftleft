@@ -1,6 +1,6 @@
 # Introduction
 
-This repo contains sample terraform scripts required to deploy ShiftLeft Inspect to your organization's GitHub repositories. A new GitHub action workflow for ShiftLeft will be created for integration in a branch called `feature/shiftleft`. See the module `shiftleft` for customizing the branch name.
+This repo contains sample terraform scripts required to deploy ShiftLeft NG SAST to your organization's GitHub repositories. A new GitHub action workflow for ShiftLeft will be created for integration in a branch called `feature/shiftleft`. See the module `shiftleft` for customizing the branch name.
 
 ## Who should use this script?
 
